@@ -4,13 +4,12 @@
     <title>3학년 9반 시간표</title>
     <meta charset="utf-8">
     <style>
-        a {
-            color:black;
-            text-decoration: none;
+        body{
+            margin: 0;
         }
-        #title{
-            display: grid;
-            grid-template-columns: 100%;
+        a {
+            color:royalblue;
+            text-decoration: none;
         }
         h1 {
             font-size: 45px;
@@ -18,7 +17,10 @@
             border-bottom:3px solid black;
             padding: 15px;
             margin: 0;
-
+        }
+        #title{
+            display: grid;
+            grid-template-columns: 100%;
         }
         #st{
             margin: 0;
@@ -31,32 +33,39 @@
         tr,td,th{
             border: black 3px solid;
         }
-        td{
-            font-weight: bold;
-        }
         #table{
-            font-size: 30px;
+            font-size: 28px;
             text-align: center;
             padding-left: 30px;
-
         }
         #body{
             display: grid;
-            grid-template-columns: 75% 25%;
+            grid-template-columns: 17% 1fr;
+        }
+        #link{
+            border-right: black solid 3px;
+            font-weight: bold;
         }
         #oc{
-            border-left: black solid 3px;
-            padding-left: 20px;
+            padding-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div id="title">
-    <h1><a href="Time_Table.html">시간표</a><br>
+    <h1><a href="Time_Table.html" style="color: black;">시간표</a><br>
     <p id="st">충훈 고등학교 3학년 9반 시간표</p>
     </h1>
     </div>
     <div id="body">
+    <div id="link">
+        <ul>
+        <li style="font-size: 22px;" id="oc"><a href="https://hoc31.ebssw.kr/onlineClass/reqst/onlineClassReqstInfoView.do" target="blank">
+        온라인 클래스로 가기</a></h2>
+        <li style="font-size: 22px;"><a href="https://cafe.naver.com/chunghun3" target="blank">
+        네이버 카페로 가기</a></h2>
+        </ul>
+    </div>
     <div id="table">
         <table border="1">
             <p><tr style="background-color:green;">
@@ -110,11 +119,6 @@
                 <td> </td>
             </tr></p>
         </table>
-    </div>
-    <div id="oc">
-    <h2 style="font-size: 30px;"><p><a href="https://hoc31.ebssw.kr/onlineClass/reqst/onlineClassReqstInfoView.do" target="blank"
-        style="color: royalblue;">온라인 클래스로 가기</a></p></h2>
-        <img src="https://github.com/bakesia/Time_Table/blob/master/ebs_logo.png?raw=true" style="width: 250px;">
     </div>
     </div>
 </body>
